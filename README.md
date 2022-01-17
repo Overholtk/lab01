@@ -41,9 +41,9 @@ This project allows a user to view and sort a number of animals (fictional and o
 
 **Start time:** 9:33p
 
-**Finish time:** 
+**Finish time:** 10:30p
 
-**Actual time needed to complete:** 
+**Actual time needed to complete:** 1 hour
 
 # Getting Started with Create React App
 
