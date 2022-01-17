@@ -10,11 +10,12 @@ class HornedBeasts extends React.Component{
         }
     }
     
-    handleClick = () => {
-        this.setState({
-            favorites: this.state.favorites + 1
-        });
-    }
+    // handleClick = () => {
+    //     this.setState({
+    //         favorites: this.state.favorites + 1
+    //     });
+    //     this.props.displayModal();
+    // }
     
     render(){
         return(
@@ -22,7 +23,12 @@ class HornedBeasts extends React.Component{
                 <Card.Img 
                     src={this.props.imageUrl} 
                     alt={this.props.title}
-                    onClick={this.handleClick}
+                    onClick={() => {
+                        this.setState({
+                            favorites: this.state.favorites + 1
+                        })
+                        this.props.displayModal(this.props.title, this.props.imageUrl, this.props.description);
+                    }}
                     />
                 <Card.Body>
                     <Card.Title>{this.props.title}</Card.Title>
