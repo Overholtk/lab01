@@ -1,0 +1,9 @@
+.beast {
+    width: 30%;
+    border: 1px solid black;
+    margin-bottom: 1vw;
+}
+
+.beast img {
+    width: 100%;
+}

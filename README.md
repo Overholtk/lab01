@@ -1,6 +1,39 @@
 # Project Overview
 This project allows a user to view and sort a number of animals (fictional and otherwise!) based on their horns.
 
+## Lab 02 Features
+
+### Number and name of feature: #1 Display Images
+
+**Estimate of time needed to complete:** 20 minutes
+
+**Start time:** 7:17p
+
+**Finish time:** 7:20p
+
+**Actual time needed to complete:** 3 minutes
+
+### Number and name of feature: #2 Allow users to vote for their favorite beast
+
+**Estimate of time needed to complete:** 40 minutes
+
+**Start time:** 7:21p
+
+**Finish time:** 7:35p
+
+**Actual time needed to complete:** 14 minutes
+
+### Number and name of feature: #3 Bootstrap
+
+**Estimate of time needed to complete:** 1 hour
+
+**Start time:** 7:49p
+
+**Finish time:** 8:30p
+
+**Actual time needed to complete:** 40 minutes
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
