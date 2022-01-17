@@ -5,24 +5,21 @@ import './Main.css'
 
 class Main extends React.Component{
     render(){
-        const beasts = this.props.beasts;
-            //returns the whole chunk of code including javascript
+
+        console.log(this.props);
+
+        let beastsArray = this.props.beasts.map((beast, idx) => (
+            <HornedBeasts 
+                key={idx}
+                displayModal={this.props.displayModal}
+                title={beast.title}
+                imageUrl={beast.image_url}
+                description={beast.description}
+            />
+        ));
             return(
                 <main>
-                    {
-                        //data.map return displays indiviual images
-                        beasts.map(function(beast, idx){
-                            return(
-                                <HornedBeasts 
-                                    className="test"
-                                    key={idx}
-                                    title={beast.title}
-                                    imageUrl={beast.image_url}
-                                    description={beast.description}
-                                />
-                            )
-                        })
-                    }
+                    {beastsArray}
                 </main>
             );
     }

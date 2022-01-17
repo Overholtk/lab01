@@ -33,6 +33,17 @@ This project allows a user to view and sort a number of animals (fictional and o
 
 **Actual time needed to complete:** 40 minutes
 
+## Lab 03 Features
+
+### Number and name of feature: 
+
+**Estimate of time needed to complete:** 1 hour
+
+**Start time:** 9:33p
+
+**Finish time:** 
+
+**Actual time needed to complete:** 
 
 # Getting Started with Create React App
 
