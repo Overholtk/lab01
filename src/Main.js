@@ -8,7 +8,12 @@ class Main extends React.Component{
 
         console.log(this.props);
 
-        let beastsArray = this.props.beasts.map((beast, idx) => (
+        let filteredBeasts = this.props.beasts;
+
+        if(this.props.horns != null){
+            filteredBeasts = this.props.beasts.filter(beast => beast.horns == this.props.horns);
+        }
+        let beastsArray = filteredBeasts.map((beast, idx) => (
             <HornedBeasts 
                 key={idx}
                 displayModal={this.props.displayModal}
@@ -17,6 +22,8 @@ class Main extends React.Component{
                 description={beast.description}
             />
         ));
+
+
             return(
                 <main>
                     {beastsArray}

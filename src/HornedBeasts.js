@@ -9,14 +9,7 @@ class HornedBeasts extends React.Component{
             "favorites": 0
         }
     }
-    
-    // handleClick = () => {
-    //     this.setState({
-    //         favorites: this.state.favorites + 1
-    //     });
-    //     this.props.displayModal();
-    // }
-    
+       
     render(){
         return(
             <Card className="beast">
