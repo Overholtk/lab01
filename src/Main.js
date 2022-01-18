@@ -11,7 +11,7 @@ class Main extends React.Component{
         let filteredBeasts = this.props.beasts;
 
         if(this.props.horns != null){
-            filteredBeasts = this.props.beasts.filter(beast => beast.horns == this.props.horns);
+            filteredBeasts = this.props.beasts.filter(beast => beast.horns === parseInt(this.props.horns));
         }
         let beastsArray = filteredBeasts.map((beast, idx) => (
             <HornedBeasts 
