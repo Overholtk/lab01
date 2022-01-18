@@ -4,7 +4,6 @@ import Main from './Main'
 import Footer from './Footer.js';
 import SelectedBeast from './SelectedBeast.js'
 import beasts from './data.json';
-import { Modal } from 'bootstrap';
 
 class App extends React.Component {
   constructor(props){
@@ -13,7 +12,8 @@ class App extends React.Component {
       display: false,
       beastTitle: '',
       imageUrl: '',
-      imageText: ''
+      imageText: '',
+      horns: null
     }
   }
 
@@ -33,16 +33,26 @@ class App extends React.Component {
     })
   }
 
+  handleFormSubmit = (e) => {
+    this.setState({
+      horns: e.target.value
+    });
+  }
+
   render(){
     return(
       <>
-        <Header />
-        <Main 
+        <Header 
+          handleFormSubmit={this.handleFormSubmit}
+        />
+        <Main
+          horns={this.state.horns} 
           beasts={beasts} 
           displayModal={this.displayModal}
         />
         <SelectedBeast
           closeModal={this.handleCloseModal}
+          horns={this.state.horns}
           display={this.state.display}
           beastTitle={this.state.beastTitle}
           imageUrl={this.state.imageUrl}

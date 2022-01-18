@@ -35,7 +35,7 @@ This project allows a user to view and sort a number of animals (fictional and o
 
 ## Lab 03 Features
 
-### Number and name of feature: 
+### Number and name of feature: Display a Modal
 
 **Estimate of time needed to complete:** 1 hour
 
@@ -44,6 +44,18 @@ This project allows a user to view and sort a number of animals (fictional and o
 **Finish time:** 10:30p
 
 **Actual time needed to complete:** 1 hour
+
+## Lab 04 Features
+
+### Number and name of feature: Filter by Number of Horns
+
+**Estimate of time needed to complete:** 1 hour
+
+**Start time:** 11:46p
+
+**Finish time:** 
+
+**Actual time needed to complete:** 
 
 # Getting Started with Create React App
 
